@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var snowLayer = SnowEffectLayer()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUp()
     }
 
+    fileprivate func setUp() {
+        snowLayer.yAcceleration = 20.0
+        snowLayer.effectImage = UIImage(named: "snowFlake")
+        snowLayer.injectSnowLayer(into: self.view)
+    }
+    
+    @IBAction func stopSnowing(_ sender: Any) {
+        snowLayer.removeSnowLayer(from: self.view)
+    }
 
 }
 

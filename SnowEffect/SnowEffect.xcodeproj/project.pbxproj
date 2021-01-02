@@ -13,6 +13,7 @@
 		7868AA5725A0C507002E55FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7868AA5525A0C507002E55FD /* Main.storyboard */; };
 		7868AA5925A0C50A002E55FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7868AA5825A0C50A002E55FD /* Assets.xcassets */; };
 		7868AA5C25A0C50A002E55FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7868AA5A25A0C50A002E55FD /* LaunchScreen.storyboard */; };
+		7868AA6B25A0C748002E55FD /* SnowEffectLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868AA6A25A0C748002E55FD /* SnowEffectLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7868AA5825A0C50A002E55FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7868AA5B25A0C50A002E55FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7868AA5D25A0C50A002E55FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7868AA6A25A0C748002E55FD /* SnowEffectLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowEffectLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				7868AA4E25A0C506002E55FD /* SnowEffect */,
+				7868AA6425A0C543002E55FD /* Supporting Files */,
 				7868AA4D25A0C506002E55FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,9 +59,9 @@
 		7868AA4E25A0C506002E55FD /* SnowEffect */ = {
 			isa = PBXGroup;
 			children = (
-				7868AA6425A0C543002E55FD /* Supporting Files */,
 				7868AA4F25A0C507002E55FD /* AppDelegate.swift */,
 				7868AA5125A0C507002E55FD /* SceneDelegate.swift */,
+				7868AA6925A0C730002E55FD /* SnowEffect */,
 				7868AA5325A0C507002E55FD /* ViewController.swift */,
 				7868AA5525A0C507002E55FD /* Main.storyboard */,
 				7868AA5A25A0C50A002E55FD /* LaunchScreen.storyboard */,
@@ -73,6 +76,14 @@
 				7868AA5D25A0C50A002E55FD /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7868AA6925A0C730002E55FD /* SnowEffect */ = {
+			isa = PBXGroup;
+			children = (
+				7868AA6A25A0C748002E55FD /* SnowEffectLayer.swift */,
+			);
+			path = SnowEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7868AA5425A0C507002E55FD /* ViewController.swift in Sources */,
+				7868AA6B25A0C748002E55FD /* SnowEffectLayer.swift in Sources */,
 				7868AA5025A0C507002E55FD /* AppDelegate.swift in Sources */,
 				7868AA5225A0C507002E55FD /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MF6J97KS4;
-				INFOPLIST_FILE = "SnowEffect/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2MF6J97KS4;
-				INFOPLIST_FILE = "SnowEffect/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
